@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --background-completed-btn: #17E0BC;
+  --shadow-completed-btn: rgb(13, 184, 158, .4);
+  --theme-background-dark: #000;
+  --theme-color-dark-1: #F7F7F7;
+  --theme-color-dark-2: #E8E8E8;
+  --bg-add-btn: #752ECF;
+
+  --color-shadow1: #E350CC;
+  --color-shadow2: #0146E0;
+  --theme-color-light1: #232328;
+  --theme-color-light2: #D6D6D6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: var(--theme-background-dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+section{
+  max-width: 410px;
+  margin-inline: auto;
+
+}
+
+img{
+  width: 100%;
+}
+
+.task input:r + label::after{
+  opacity: 1;
+}
+
+.task .checkbox-shadow{
+  border: 0.15rem solid rgba(211, 211, 211, 0.5);
+}
+
+.daily-task::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (width > 450px) {
+  .add-new{
+    box-shadow: 2px 2px 0rem 5px var(--color-shadow2), 2px 2px 30rem 5px var(--color-shadow2);
+  }
+
+  .daily-task{
+    box-shadow: 2px 2px 0rem 5px var(--background-completed-btn), 2px 2px 30rem 5px var(--background-completed-btn);
+  }
+}
